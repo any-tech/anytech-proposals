@@ -42,7 +42,7 @@ extensions = ['sphinx.ext.autodoc',
     'sphinx.ext.githubpages']
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = []
+templates_path = ['_templates']
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -55,7 +55,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'anytech-proposals'
-copyright = u'2017, AnyTech Team'
+copyright = u'2017, brightview Inc'
 author = u'AnyTech Team'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -93,6 +93,7 @@ todo_include_todos = True
 #
 html_theme = "sphinx_rtd_theme"
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+html_show_sphinx = False
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -180,3 +181,7 @@ intersphinx_mapping = {'https://docs.python.org/': None}
 
 # Disable source link
 html_show_sourcelink = False
+
+rst_prolog = """
+:github_url: https://github.com/brightview-jp/anytech-proposals 
+"""
