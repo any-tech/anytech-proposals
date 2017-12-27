@@ -1,0 +1,12 @@
+build
+
+# IDEs and text editors
+*~
+*.swp
+.idea/
+.project
+.pycharm_helpers/
+.pydevproject
+
+# OS X artifacts
+*.DS_Store
